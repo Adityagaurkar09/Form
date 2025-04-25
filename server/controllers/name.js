@@ -23,7 +23,7 @@ const postPlate = async (req,res)=>{
     } catch (error) {
         return res.json({
             status: "false",
-            message: "error.message"
+            message: error.message
         });
     }
 }
